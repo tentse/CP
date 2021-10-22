@@ -1,6 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
-
 vector<bool> primes(n+4,true);
 
 prime[0] = prime[1] = false;
