@@ -19,6 +19,13 @@ typedef vector<char> vc;
 typedef vector<string> vs;
 typedef pair<int,int> pi;
 
+bool even(int &x){
+    if (x&1 == 1){
+        return false;
+    }
+    return true;
+}
+
 bool comp(int &a,int &b){
     if (a>=b){
         return true;
@@ -33,11 +40,11 @@ bool comp(char &a, char &b){
     return false;
 }
 
-//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------
 
 void solve(){
     
-    
+
 
 }
 
