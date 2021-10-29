@@ -6,12 +6,14 @@ using namespace std;
 #define PB push_back
 #define EB emplace_back
 #define MP make_pair
+#define el "\n"
 
 #define For(i,a,b) for(int i = a; i<b; i++)
-#define FFor(i,a,b) for (int i = a; i<=b; i++)
+#define Rfor(i,a,b) for (int i = a-1; i>=b; i--)
 
 
 typedef long long ll;
+typedef unsigned long long ull;
 typedef vector<int> vi;
 typedef vector<char> vc;
 typedef vector<string> vs;
@@ -28,13 +30,15 @@ bool comp(char &a, char &b){
     if (a>=b){
         return true;
     }
-    rturn false;
+    return false;
 }
 
-//-----------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 void solve(){
     
+    
+
 }
 
 
