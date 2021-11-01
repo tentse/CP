@@ -18,6 +18,11 @@ typedef vector<int> vi;
 typedef vector<char> vc;
 typedef vector<string> vs;
 typedef pair<int,int> pi;
+typedef map<int,int> mapi;
+typedef set<int> sti;
+typedef unordered_set<int> ust;
+
+
 
 bool even(int &x){
     if (x&1 == 1){
@@ -33,14 +38,9 @@ bool comp(int &a,int &b){
     return false;
 }
 
-bool comp(char &a, char &b){
-    if (a>=b){
-        return true;
-    }
-    return false;
-}
 
-//-----------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 void solve(){
     
