@@ -21,7 +21,7 @@ typedef vector<char> vc;
 typedef vector<string> vs;
 typedef pair<int,int> pairi;
 typedef map<int,int> mapi;
-typedef set<int> set;
+typedef set<int> seti;
 typedef multiset<int> mset;
 typedef unordered_set<int> uset;
  
@@ -40,25 +40,24 @@ bool even(ll &x){
 }
  
 bool comp(int &a,int &b){
-    if (a>=b){
-        return true;
-    }
-    return false;
+    return a >= b;
 }
  
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- 
- 
- 
+
+
 void solve(){
+
+    
     
 
- 
 }
- 
- 
- 
+   
+
+
+
+
 int main(){
     
     ios_base::sync_with_stdio(false);
@@ -66,7 +65,10 @@ int main(){
     
     int t; cin >> t; loop(t)
 
-    solve();
-    
+    {
+        solve();
+    }
+
     return 0;
 }
+
