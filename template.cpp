@@ -7,6 +7,7 @@ using namespace std;
 #define EB emplace_back
 #define MP make_pair
 #define el "\n"
+#define check cout << "PASS" << el;
  
 #define For(i,a,b) for(int i = a; i<b; i++)
 #define Rfor(i,a,b) for (int i = a-1; i>=b; i--)
@@ -42,6 +43,10 @@ bool even(ll &x){
 bool comp(int &a,int &b){
     return a >= b;
 }
+
+bool comp(ll &a,ll &b){
+    return a >= b;
+}
  
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -53,10 +58,6 @@ void solve(){
     
 
 }
-   
-
-
-
 
 int main(){
     
@@ -64,7 +65,6 @@ int main(){
     cin.tie(NULL);
     
     int t; cin >> t; loop(t)
-
     {
         solve();
     }
