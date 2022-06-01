@@ -1,74 +1,64 @@
+/* Tenzin Tsering */
+
 #include<bits/stdc++.h>
 using namespace std;
- 
-#define F first
-#define S second
-#define PB push_back
-#define EB emplace_back
-#define MP make_pair
+
+#define fastio() ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
 #define el "\n"
-#define check cout << "PASS" << el;
- 
-#define For(i,a,b) for(int i = a; i<b; i++)
-#define Rfor(i,a,b) for (int i = a-1; i>=b; i--)
-#define loop(t) while(t--)
- 
- 
+#define ss second
+#define ff first
+
 typedef long long ll;
 typedef unsigned long long ull;
+typedef long double lld;
 typedef vector<int> vi;
-typedef vector<vector<int>> vvi;
-typedef vector<char> vc;
-typedef vector<string> vs;
-typedef pair<int,int> pairi;
-typedef map<int,int> mapi;
-typedef set<int> seti;
-typedef multiset<int> mset;
-typedef unordered_set<int> uset;
- 
-bool even(int &x){
-    if (x&1 == 1){
-        return false;
-    }
-    return true;
-}
- 
-bool even(ll &x){
-    if (x&1 == 1){
-        return false;
-    }
-    return true;
-}
- 
-bool comp(int &a,int &b){
-    return a >= b;
-}
 
-bool comp(ll &a,ll &b){
-    return a >= b;
-}
- 
-//------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#ifndef ONLINE_JUDGE
+    #define debug(x) cerr << #x << " : "; _print(x); cerr << endl;
+#else
+    #define debug(x)
+#endif
 
+void _print(ll t) {cerr << t;}
+void _print(int t) {cerr << t;}
+void _print(string t) {cerr << t;}
+void _print(char t) {cerr << t;}
+void _print(lld t) {cerr << t;}
+void _print(double t) {cerr << t;}
+void _print(ull t) {cerr << t;}
+
+template <class T, class V> void _print(pair <T, V> p);
+template <class T> void _print(vector <T> v);
+template <class T> void _print(set <T> v);
+template <class T, class V> void _print(map <T, V> v);
+template <class T> void _print(multiset <T> v);
+template <class T, class V> void _print(pair <T, V> p) {cerr << "{"; _print(p.ff); cerr << ","; _print(p.ss); cerr << "}";}
+template <class T> void _print(vector <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << ", ";} cerr << "]";}
+template <class T> void _print(set <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << ", ";} cerr << "]";}
+template <class T> void _print(multiset <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << ", ";} cerr << "]";}
+template <class T, class V> void _print(map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << ", ";} cerr << "]";}
+
+//--------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------
 
 void solve(){
 
     
     
-
 }
+
 
 int main(){
     
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    
-    int t; cin >> t; loop(t)
-    {
+#ifndef ONLINE_JUDGE
+    freopen("Error.txt", "w", stderr); 
+#endif
+
+    int t;
+    cin >> t;
+    while (t--){
         solve();
     }
 
     return 0;
 }
-
