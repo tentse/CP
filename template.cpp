@@ -7,6 +7,8 @@ using namespace std;
 #define endl "\n"
 #define ss second
 #define ff first
+#define all(x) (x).begin(), (x).end()
+#define pb push_back
 
 typedef long long ll;
 typedef unsigned long long ull;
@@ -53,6 +55,8 @@ int main(){
 #ifndef ONLINE_JUDGE
     freopen("Error.txt", "w", stderr); 
 #endif
+    
+    fastio();
 
     int t;
     cin >> t;
