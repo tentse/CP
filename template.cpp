@@ -5,17 +5,24 @@ using namespace std;
 
 #define fastio() ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
 #define endl "\n"
-#define desc greater<int>()
 #define ss second
 #define ff first
 #define all(x) (x).begin(), (x).end()
 #define pb push_back
+#define ppb pop_back
+#define ppf pop_front
+#define size(a) (ll)a.size()
 
 typedef long long ll;
 typedef unsigned long long ull;
 typedef long double lld;
 typedef vector<int> vi;
 typedef vector<ll> vll;
+typedef vector<string> vs;
+typedef vector<pair<int,int>> vpi;
+typedef vector<pair<ll,ll>> vpll;
+typedef vector<vector<int>> vvi;
+typedef vector<vector<ll>> vvll;
 
 #ifndef ONLINE_JUDGE
     #define debug(x) cerr << #x << " : "; _print(x); cerr << endl;
@@ -44,20 +51,32 @@ template <class T> void _print(unordered_set <T> v) {cerr << "[ "; for (T i : v)
 template <class T, class V> void _print(map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << ", ";} cerr << "]";}
 template <class T, class V> void _print(unordered_map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << ", ";} cerr << "]";}
 
-ll power(ll b, ll p) {ll x = 1;for (int i = 1; i<=p; i++) x*=b; return x;}
+ll power(ll a, ll b) {ll res = 1;while (b > 0) {if (b & 1)res = res * a;a = a * a;b >>= 1;}return res;}
+long long _sqrt (long long x) {long long ans = 0;for (ll k = 1LL << 30; k != 0; k/= 2){if ((ans + k)*(ans + k)<=x){ans += k;}}return ans;}
 string to_bin(int num) {string str;while(num){if(num & 1) str+='1';else str+='0';num>>=1;}   return str;}
 string to_bin(ll num) {string str;while(num){if(num & 1) str+='1';else str+='0';num>>=1;}   return str;}
-//--------------------------------------------------------------------------------------------------------------------------
-//--------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-void solve(){
+/*
+    *** Mistake to avoid : ***
+    1) Understand the question !!!!
+    2) Solve -> Design -> Code
+    3) What if test case is extreme SMALL or extreme LARGE
+    4) WRITE STUFF DOWN
+    5) DON'T GET STUCK ON ONE APPROACH
+    6) Do smth! instead of nothing and stay organized
+    7) int overflow, array bounds
+*/
+
+void solve() {
 
     
     
 }
 
 
-int main(){
+int main() {
     
 #ifndef ONLINE_JUDGE
     freopen("Error.txt", "w", stderr); 
@@ -68,7 +87,7 @@ int main(){
     int t;
     cin >> t;
 
-    while (t--){
+    while (t--) {
         solve();
     }
 
